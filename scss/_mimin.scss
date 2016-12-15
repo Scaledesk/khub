@@ -1,0 +1,32 @@
+////[Table of contents]
+
+////1. Background Opacity
+////2. Background Cover
+////3. Font Awesome
+////4. Div Center
+
+////[End table of contents]
+@mixin background-opacity($color: #000, $opacity: 0.85) {
+   background: rgba($color, $opacity);
+}
+@mixin background-cover(){
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+@mixin font-awesome($glyph, $font : 'FontAwesome') {
+   font-family: $font;
+   content: "#{$glyph}";
+   speak: none;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   -webkit-font-smoothing: antialiased;
+   text-decoration: none;
+}
+@mixin div-center(){
+   text-align: center;
+   margin: 0 auto;
+   display: block;
+}
