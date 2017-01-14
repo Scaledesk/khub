@@ -316,7 +316,7 @@
                         <h1 class="f-30 m-b-20">CONTACT US NOW</h1>
                         <p class="m-b-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in hendrerit lacus. Curabitur pretium nisi convallis leo viverra hendrerit.</p>
 
-                        <form id="form_contact" action="include/sendmail.php" method="post" class="uk-form kc-form-comment">
+                        <form id="form_contact" action="PHPMailer/MailFunction.php" method="post" class="uk-form kc-form-comment">
                             <div class="uk-grid">
                                 <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
                                     <div class="uk-form-icon">
@@ -347,8 +347,12 @@
                                         <button class="kc-button kc-button-primary" type="submit">SUBMIT MESSAGE</button>
                                     </div>
                                 </div>
+                                <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
+                                    <div class="response"></div>
+                                </div>
                             </div>
                         </form>
+
                     </div>
 
                     <div class="uk-width-medium-3-5 uk-width-small-1-1 p-40 ">
