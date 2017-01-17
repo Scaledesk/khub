@@ -231,6 +231,10 @@
     padding: 0!important;
 }
 
+.p-l-0{
+    padding-left: 0px !important;
+}
+
 .p-5{
     padding: 5px!important;
 }
