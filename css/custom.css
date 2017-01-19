@@ -53,7 +53,9 @@
 
 
 
-
+.search-design .sec-title .border-line:before{
+    margin-bottom: 22px;
+}
 
 
 
@@ -289,6 +291,10 @@
 
 .p-t-10{
     padding-top: 10px!important;
+}
+
+.p-t-30{
+    padding-top: 30px!important;
 }
 
 .p-t-0{
