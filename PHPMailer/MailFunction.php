@@ -9,8 +9,10 @@ $name=$_POST['name'];
 $c_subject=$_POST['subject'];
 $comment=$_POST['comment'];
 
- $emailadmin="nkscoder@gmail.com";
+ //$emailadmin="nkscoder@gmail.com";
 
+  $emailadmin="hello@interiopro.com";
+  
 $subject = "Contact Us - Interio Pro";
 
 $email=$_POST['email'];
@@ -19,33 +21,40 @@ $Usersubject="Thank You for Interio Pro";
 $messageUsers=file_get_contents('template.html');
 $message ='<html>
 <body>
+<div id="abcd" style="text-align:justify;font-size:18px;"> Name:-'.$name.'<br>Phone:-'.$phone.'<br>Company :-'.$c_subject.'<br>Address :-'.$comment. '</div>
+</body>
+</html>';
+
+if($email){
+$message ='<html>
+<body>
 <div id="abcd" style="text-align:justify;font-size:18px;"> Name:-'.$name.'<br>Email:-'.$email.'<br>Phone:-'.$phone.'<br>Company :-'.$c_subject.'<br>Address :-'.$comment. '</div>
 </body>
 </html>';
 
-
+}
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'sub5.mail.dreamhost.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'hi@scaledesk.com';                 // SMTP username
+$mail->Username = 'hello@interiopro.com';                 // SMTP username
 $mail->Password = 'qazplmq1w2e3r4';                       // SMTP password
 //$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;// TCP port to connect to
 $mail->IsHTML(true);
-$mail->setFrom('hi@scaledesk.com', 'Interio Pro');
+$mail->setFrom('hello@interiopro.com', 'Interio Pro');
 //$mail->addAddress('ellen@example.com');               // Name is optional
-$mail->addReplyTo('hi@scaledesk.com', 'noreply');
+$mail->addReplyTo('hello@interiopro.com', 'noreply');
 
 $mail1->isSMTP();                                      // Set mailer to use SMTP
 $mail1->Host = 'sub5.mail.dreamhost.com';  // Specify main and backup SMTP servers
 $mail1->SMTPAuth = true;                               // Enable SMTP authentication
-$mail1->Username = 'hello@manfra.in';                 // SMTP username
+$mail1->Username = 'hello@interiopro.com';                 // SMTP username
 $mail1->Password = 'qazplmq1w2e3r4';                           // SMTP password
 //$mail1->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail1->Port = 587;// TCP port to connect to
 $mail1->IsHTML(true);
-$mail1->setFrom('hello@manfra.in', 'Interio Pro');
+$mail1->setFrom('hello@interiopro.com', 'Interio Pro');
 
 /*if($_FILES['fileToUpload']){*/
 
