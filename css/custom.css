@@ -105,7 +105,9 @@ figure img{
     font-size: 0.7rem;
 }
 
-
+.carousel .uk-slider li img{
+    opacity: 0.65;
+}
 
 
 
