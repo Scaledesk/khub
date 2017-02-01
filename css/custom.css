@@ -73,6 +73,10 @@
     background: #f9f9f9;
 }
 
+._2lqg{
+    max-height: none !important;
+}
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #222 !important;
 }
