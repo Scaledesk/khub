@@ -97,6 +97,8 @@ figure img{
 
 div.header li.stick-li {
    visibility: hidden;
+    transition: visibility 0.25s ease-in;
+    -webkit-transition:visibility 0.25s ease-in;
    
 }
 
@@ -127,6 +129,7 @@ div.header.uk-active li.stick-li span.cta{
 
 .b-1{
     border: 1px solid #f3f3f3;
+    background: #fff;
 }
 
 .text-pri{
@@ -138,7 +141,9 @@ div.header.uk-active li.stick-li span.cta{
     opacity: 0.65;
 }
 
-
+#drift-widget{
+    right: 20px !important;
+}
 
 
 

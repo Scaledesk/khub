@@ -297,7 +297,10 @@
     text-align: center; }
 
   .banner-caption-h1, .banner-caption-p, .banner-caption-scroll {
-    display: none !important; }
+/*    display: none !important; */
+      display: inherit !important;
+    
+    }
 
   .sec-margin-top {
     display: none; }
