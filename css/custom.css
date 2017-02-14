@@ -567,3 +567,16 @@ div.header.uk-active li.stick-li span.cta{
     min-height: 520px;
 
 }
+
+
+/*Landing PAGE */
+
+.top-bar{
+    background: url(../images/team/workers_vietnam.jpg);
+    height: 90vh;
+}
+
+div.header.uk-active > .top-bar {
+  background: #fff !important;
+   
+}
