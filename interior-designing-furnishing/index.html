@@ -53,8 +53,8 @@
       
         <!-- BEGIN HEADER -->
         <header class="home-one">
-            <div class="top-bar">
-                <div data-uk-sticky class="uk-container uk-container-center">
+            <div class="top-bar bg-top">
+                <div class="uk-container uk-container-center">
                     <div class="uk-grid uk-grid-collapse">
                         <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-width-1-1">
                             <div class="box uk-flex uk-flex-middle uk-flex-left">
@@ -72,6 +72,86 @@
                         </div>
                     </div>
                 </div>
+                
+               <div class="uk-container uk-container-center uk-margin-large-top"> 
+                   
+                   <div class="uk-grid uk-grid-large">
+                    
+                    <div class="uk-width-medium-1-2 ">
+                       
+    <div class="">
+        <h1 class="">Get free Consultation Now</h1>
+         <p class="uk-margin-top">
+                     
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+
+                    </p>
+    
+    
+</div>
+                  
+                    </div>
+                    
+                    <div class="uk-width-medium-1-2">
+                
+                 <form id="form_contact_top" action="../PHPMailer/MailFunction.php" method="POST" class="uk-form kc-form-comment uk-align-center">
+                            <div class="uk-grid p-10">
+                                <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
+                                    <div class="uk-form-icon">
+                                        <i class="uk-icon-user"></i>
+                                        <input class="input-text" required name="name" type="text" placeholder="Your Name">
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
+                                    <div class="uk-form-icon">
+                                        <i class="uk-icon-phone"></i>
+                                        <input required class="input-text" name="phone" type="text" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
+                                    <div class="uk-form-icon">
+                                        <i class=""></i>
+                                        <select required>
+                                        <option value="" disabled selected>Choose Requirement</option>
+                                            <option>Interiors</option>
+                                        <option value="Office">Office Inteirors</option>
+                                        <option value="shop">Shop Design</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
+                                    <div class="uk-form-icon">
+                                        <i class="uk-icon-envelope"></i>
+                                        <input class="input-text" name="subject" type="email" placeholder="Your e-Mail ID">
+                                        
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
+                                    <div class="uk-clearfix">
+                                        <div class="uk-align-center">
+                                            <button class="kc-button kc-button-default uk-align-center" type="submit"> SUBMIT MESSAGE</button>
+                                        </div>
+<!--
+                                        <div class="uk-float-center">
+                                            <a href="../tel:09811673980"><span class="icon uk-icon-phone kc-color-primary"></span>or  Call Us Now @ 9811673980</a>
+                                        </div>
+-->
+                                    </div>
+                                </div>
+                                <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
+                                    <div class="response"></div>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        </div>
+                    
+                    </div>
+                   
+                   </div>
+                    
             </div>
             
      
@@ -97,7 +177,7 @@
                 
             </div>
             
-            <div id="hdstick" class="header" data-uk-sticky="{top:90}">
+            <div id="hdstick" data-uk-sticky class="header">
                 <div class="uk-container uk-container-center">
                     <nav class="kc-navbar uk-clearfix">
                         <ul class="uk-navbar-nav menu-primary uk-hidden-medium uk-hidden-small">
@@ -1695,24 +1775,7 @@ Be it a salwar suit or a sedan car or just a coffee brewery. We plan to cater th
 
 </script>
 
-<script>
-//$( ".header.uk-active" ).parent().css( "background-color", "red" );
-    
-   $(window).scroll(function() {
-       
-//       alert("dfg");
-       
-       if ($('#hdstick').hasClass('uk-active')) {
-        
-    
-        
-       $( "div.top-bar" ).addClass( "w-bg" );
 
-           
-    }
-       
-   });
-</script>
 
 <!-- Start of Async Drift Code -->
 <script>
