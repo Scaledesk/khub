@@ -1,0 +1,140 @@
+/*Landing PAGE */
+
+.bg-top{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(  0,0,0,0.7)),url(../images/team/workers_vietnam.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+/*
+    position: fixed;
+    width: 100vw;
+*/
+}
+
+.bg-top h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #e5c882;
+}
+
+.bg-top p{
+    font-size: 20px;
+    
+    color: #fff;
+}
+    
+#form_contact_top {
+    width: 65%;
+    background: rgba(0,0,0,0.6);
+    padding: 12px;
+    
+}
+
+#form_contact_top input:invalid{
+    border: 2px solid #b13e22 ;
+}
+
+#form_contact_top input ,#form_contact_top input:valid ,#form_contact_top input[type=text]:focus, #form_contact_top input[type=email]:focus{
+    border: 2px solid #d8ad50 !important;
+    background: #f4f4f4 !important;
+}
+
+
+#form_contact_top input:not([type=radio]):not([type=checkbox]), #form_contact_top input[type=email]{
+    color: #333;
+    border: 2px solid transparent;
+   
+    transition: border 0.1s ease-out;
+}
+
+#form_contact_top
+select{
+    width: inherit;
+    height: 45px;
+    margin-bottom: 30px;
+    
+}
+
+
+
+#form_contact_top .kc-button{
+    color: #fff;
+    
+}
+
+
+.bg-top a,.top-bar.bg-top .box ul li {
+    color: #fff;
+}
+
+.bg-top a:hover,.top-bar.bg-top .box ul li:hover {
+    color: #d8ad50;
+}
+
+#hdstick ul li > a{
+    
+    font-weight: 400 ;
+    padding: 0px 18px;
+    
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    #form_contact_top select, #form_contact_top input{  margin-bottom: 10px;  }
+    
+    #form_contact_top {width: 100%;}
+    
+    .bg-top{ height: 140vh; }
+}
+
+/*Iphone 4 */
+
+@media only screen and (width:320px){
+    #form_contact_top select, #form_contact_top input{  margin-bottom: 10px;  }
+    
+    #form_contact_top {width: 100%;}
+    
+    .bg-top{ height: 165vh; }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+      
+       #form_contact_top select, #form_contact_top input{  margin-bottom: 10px;  }
+    
+    #form_contact_top {width: 100%;}
+    
+    .bg-top{ height: 120vh; }
+
+}
+
+/* ----------- iPad mini ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      
+    #form_contact_top select, #form_contact_top input{  margin-bottom: 20px;  }
+    
+    #form_contact_top {width: 100%;}
+    
+    .bg-top{ height: 60vh; }
+      
+      
+
+}
+
+@media only screen and (min-width:480px) and (max-width:767px){
+    #form_contact_top select, #form_contact_top input{  margin-bottom: 10px;  }
+    
+    #form_contact_top {width: 100%;}
+    
+    .bg-top{ height: 130vh; }
+}
+
+
+
+

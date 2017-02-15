@@ -12,7 +12,7 @@
         
         <meta name="keywords" content="Interio Pro, interior design company, interior furnish company, kitchen interiors, bedroom interior, office interior design, commercial interior design, home furnishing">
         
-        <meta name="robots" content="index,follow">
+        <meta name="robots" content="noindex,nofollow">
         
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
         <link href="../plugins/normalize.css" rel="stylesheet" type="text/css">
@@ -42,10 +42,28 @@
         <link rel="stylesheet" href="../css/responsive.css">
 
         <link rel="stylesheet" href="../css/custom.css">
+        
+        <link rel="stylesheet" href="landing.css">
 
 
         <!-- END BEGIN TEMPLATE LAYOUT STYLES -->
-        <link rel="shortcut icon" href="../images/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="57x57" href="../favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<link rel="manifest" href="../favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#d4b672">
+<meta name="msapplication-TileImage" content="../favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#d4b672">
     </head>
     <!-- END HEAD -->
     <body>
@@ -182,43 +200,46 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     <nav class="kc-navbar uk-clearfix">
                         <ul class="uk-navbar-nav menu-primary uk-hidden-medium uk-hidden-small">
                             <li>
-                                <a href="../index.html">HOME</a>
+                                <a href="#" data-uk-smooth-scroll>HOME</a>
 
+                            </li>
+                            
+                             <li>
+                            <a href="#about" data-uk-smooth-scroll="{offset : 50}">ABOUT US</a>
                             </li>
                             
                             <li>
                             <a href="#process" data-uk-smooth-scroll="{offset : 50}">OUR PROCESS</a>
                             </li>
                             
+                             <li>
+                            <a href="#designs" data-uk-smooth-scroll="{offset : 50}">OUR DESIGNS</a>
+                            </li>
+                            
+                            <li>
+                            <a href="#services" data-uk-smooth-scroll="{offset : 50}">OUR SERVICES</a>
+                            </li>
                             
                            
+                            
+                            
+                            
+                           
+<!--
                             <li>
                                 <a href="../vastu.html">VASTU</a>
 
                             </li>
-<!--
-                            <li class="uk-parent" data-uk-dropdown="{remaintime:'0'}">
-                                <a href="../blog-list.html">TESTIMONIALS</a>
-                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
-                                    <ul class="uk-nav uk-nav-navbar">
-                                        <li><a href="../blog-list.html">BLOG LIST</a></li>
-                                        <li><a href="../blog-grid.html">BLOG GRID</a></li>
-                                        <li class="uk-parent">
-                                            <a href="../blog-detail.html">BLOG DETAIL</a>
-                                            <div class="submenu-primary">
-                                                <ul class="uk-nav uk-nav-navbar">
-                                                    <li><a href="../coming-soon.html">COMING SOON</a></li>
-                                                    <li><a href="../404-page.html">404</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
 -->
-                            <li><a href="../team.html">OUR TEAM</a></li>
-                            <li><a href="../contact.html">CONTACT</a></li>
-                              <li class="stick-li"><a href="../#contact-home"><span class="icon uk-icon-exclamation-circle"></span> Get Free Consultation : &nbsp;  <span class="cta"><span class="icon uk-icon-phone"></span>&nbsp;09811673980</span></a></li>
+
+<!--                            <li><a href="../team.html">OUR TEAM</a></li>-->
+                            
+                            <li>
+                            <a href="#contact-home" data-uk-smooth-scroll="{offset : 50}">CONTACT US
+                            </a>
+                            </li>
+                             
+                         <li class="stick-li"><a href="#contact-home"><span class="icon uk-icon-exclamation-circle"></span> Get Free Consultation : &nbsp;  <span class="cta"><span class="icon uk-icon-phone"></span>&nbsp;09811673980</span></a></li>
                         </ul>
 
 
@@ -299,7 +320,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             </ul>
                             <ul class="uk-float-left">
                                 <li class="uk-hidden-large">
-                                    <a href="../#" id="menu_primary_toggle" class="p-l-0">
+                                    <a href="#" id="menu_primary_toggle" class="p-l-0">
                                     &nbsp; Menu
                                     <span class="icon uk-icon-reorder"></span>
                                     </a>
@@ -324,9 +345,30 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     <nav class="nav-holder">
                         <ul class="nav">
                             <li>
-                                <a href="../index.html">HOME </a>
+                                <a href="#" data-uk-smooth-scroll>HOME </a>
 
                             </li>
+                            
+                            
+                            
+                             <li>
+                            <a href="#about" data-uk-smooth-scroll="{offset : 50}">ABOUT US</a>
+                            </li>
+                            
+                            <li>
+                            <a href="#process" data-uk-smooth-scroll="{offset : 50}">OUR PROCESS</a>
+                            </li>
+                            
+                             <li>
+                            <a href="#designs" data-uk-smooth-scroll="{offset : 50}"> DESIGNS GALLERY</a>
+                            </li>
+                            
+                            <li>
+                            <a href="#services" data-uk-smooth-scroll="{offset : 50}"> SERVICES WE PROVIDE</a>
+                            </li>
+                            
+                            
+<!--
                             <li class="has-submenu">
                                 <a href="../">DESIGNS</a>
                                 <ul class="submenu">
@@ -335,6 +377,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     <li><a href="../bedroom-designs.html">Bed Room</a></li>
                                 </ul>
                             </li>
+-->
+<!--
                             <li class="has-submenu">
                                 <a href="../kitchen-designs.html">KITCHEN &amp; WARDROBES</a>
 
@@ -343,10 +387,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     <li><a href="../kitchen-designs.html">U-Shaped </a></li>
                                     <li><a href="../kitchen-designs.html">Straight</a></li>
                                     <li><a href="../kitchen-designs.html">Parallel</a></li>
-<!--                                    <li><a href="../kitchen-designs.html">SHOPPING CART</a></li>-->
+                                    <li><a href="../kitchen-designs.html">SHOPPING CART</a></li>
                                 </ul>
 
                             </li>
+-->
 <!--
                             <li class="has-submenu">
                                 <a href="../gallery-grid.html">GALLERY</a>
@@ -359,9 +404,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             </li>
 -->
 
-                            <li><a href="../vastu.html">VASTU</a></li>
-                            <li><a href="../team.html">OUR TEAM</a></li>
-                            <li><a href="../contact.html">CONTACT</a></li>
+<!--                            <li><a href="" data-uk-smooth-scroll="{offset : 50}">VASTU</a></li>-->
+                            
+                            
+                            <li><a href="#contact-home" data-uk-smooth-scroll="{offset : 50}">CONTACT US</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -510,7 +556,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         <!-- END BEGIN BLOCK SLIDER -->
         
            <!-- BEGIN BLOCK ABOUT -->
-        <section class="about sec-padding sec-background">
+        <section class="about sec-padding sec-background" id="about">
             <div class="uk-container uk-container-center">
                 <div class="uk-grid">
                     <div class="uk-width-medium-1-2 uk-width-small-1-1 uk-width-1-1">
@@ -685,7 +731,7 @@ INTERIO PRO is a Delhi based End to End Interior &amp; Execution company.
 
 
         <!-- BEGIN BLOCK DESIGNS -->
-        <section class="designs sec-padding sec-background">
+        <section class="designs sec-padding sec-background" id="designs">
             <div class="uk-container uk-container-center">
                 <div class="sec-title">
                     <h3>Our Design Gallery</h3>
@@ -1274,7 +1320,7 @@ INTERIO PRO is a Delhi based End to End Interior &amp; Execution company.
         <!-- END BEGIN BLOCK DESIGNS -->
          
            <!-- BEGIN BLOCK OUR SERVICES -->
-        <section class="our-service sec-padding">
+        <section class="our-service sec-padding" id="services">
             <div class="uk-container uk-container-center">
                 <div class="sec-title">
                     <h3>OUR SERVICES</h3>
@@ -1356,7 +1402,7 @@ Be it a salwar suit or a sedan car or just a coffee brewery. We plan to cater th
         <!-- END BEGIN BLOCK OUR SERVICES -->
 
          <!-- BEGIN BLOCK CLIENTS SAY -->
-        <section class="clients-say home-two sec-padding p-tb-65">
+        <section class="clients-say home-two sec-padding p-tb-65" id="testimonials">
             <div class="uk-container uk-container-center">
                 <div class="sec-title">
                     <h3>what our clients say</h3>
@@ -1774,6 +1820,20 @@ Be it a salwar suit or a sedan car or just a coffee brewery. We plan to cater th
   ga('send', 'pageview');
 
 </script>
+
+<script>
+
+$('.menu-media li').click(function(){
+    
+    $('.menu-media').css('display','none');
+                             
+                             
+                            
+    
+                             
+    });
+</script>
+
 
 
 
