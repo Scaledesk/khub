@@ -1,10 +1,11 @@
 /*Landing PAGE */
 
 .bg-top{
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(  0,0,0,0.7)),url(../images/team/workers_vietnam.jpg);
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(  0,0,0,0.1)),url(../images/design/living-room-design/4.jpeg);
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: -30px;
 /*
     position: fixed;
     width: 100vw;
@@ -14,7 +15,8 @@
 .bg-top h1{
     font-size: 40px;
     font-weight: 600;
-    color: #e5c882;
+/*    color: #e5c882;*/
+    color: #100909;
 }
 
 .bg-top p{
