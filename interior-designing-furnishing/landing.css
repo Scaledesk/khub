@@ -25,6 +25,22 @@
     color: #fff;
 }
     
+.ip-features{
+    background: rgba(54, 50, 48, 0.38);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: background 0.12s ease-out;
+}
+
+.ip-features:hover {
+    background: rgba(54, 50, 48, 0.78);
+    
+}
+
+.ip-features img{
+    width: 52px;
+}
+
 #form_contact_top {
     width: 65%;
     background: rgba(0,0,0,0.6);
