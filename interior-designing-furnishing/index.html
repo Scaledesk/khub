@@ -12,7 +12,7 @@
         
         <meta name="keywords" content="Interio Pro, interior design company, interior furnish company, kitchen interiors, bedroom interior, office interior design, commercial interior design, home furnishing">
         
-        <meta name="robots" content="noindex,nofollow">
+        <meta name="robots" content="index,follow">
         
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
         <link href="../plugins/normalize.css" rel="stylesheet" type="text/css">
@@ -24,6 +24,7 @@
         <link href="../plugins/uikit/css/components/slideshow.min.css" rel="stylesheet" type="text/css">
         <link href="../plugins/uikit/css/components/dotnav.min.css" rel="stylesheet" type="text/css">
         <link href="../plugins/uikit/css/components/slider.min.css" rel="stylesheet" type="text/css">
+        <link href="../plugins/oibounce/ouibounce.css" rel="stylesheet" type="text/css">
         <!-- END PAGE COMPONENTS UIKIT -->
         <!-- BEGIN PAGE LEVEL PLUGINS -->
         
@@ -45,6 +46,7 @@
         
         <link rel="stylesheet" href="landing.css">
 
+        <link rel="canonical" href="../index.html" />
 
         <!-- END BEGIN TEMPLATE LAYOUT STYLES -->
         <link rel="apple-touch-icon" sizes="57x57" href="../favicons/apple-icon-57x57.png">
@@ -76,7 +78,7 @@
                     <div class="uk-grid uk-grid-collapse">
                         <div class="uk-width-medium-1-4 uk-width-small-1-1 uk-width-1-1">
                             <div class="box uk-flex uk-flex-middle uk-flex-left">
-                                <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+                                <a href="#"><img src="../images/logo.png" alt=""></a>
                             </div>
                         </div>
                         <div class="uk-width-medium-3-4 uk-width-small-1-1 uk-width-1-1 uk-hidden-small">
@@ -1798,6 +1800,8 @@ Be it a salwar suit or a sedan car or just a coffee brewery. We plan to cater th
         <!-- END BEGIN PAGE LEVEL PLUGINS -->
         <!-- BEGIN TEMPLATE LAYOUT SCRIPTS -->
         <script src="../js/main.js" type="text/javascript"></script>
+        <script src="../plugins/oibounce/ouibounce.min.js" type="text/javascript"></script>
+        
         <!-- END BEGIN TEMPLATE LAYOUT SCRIPTS -->
         
 <!--       GA Code -->
@@ -1827,6 +1831,82 @@ $('.menu-media li').click(function(){
     });
 </script>
 
+<!--GA Analytics Code -------- -->
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-91936121-2', 'auto');
+ ga('send', 'pageview');
+
+</script>
+
+<!--Oui Bounce Modal Exit Intent -->
+
+<!-- OuiBounce Modal -->
+    <div id="ouibounce-modal">
+      <div class="underlay"></div>
+      <div class="modal">
+        <div class="modal-title">
+          <h3>Take a look at the Offers before leaving ! </h3>
+        </div>
+
+        <div class="modal-body">
+          <p>&raquo;&nbsp;Get FREE Vastu Consultation </p>
+          <p>&raquo;&nbsp;Get Free Estimate for your Project</p>
+          <p>&raquo;&nbsp;Best Designers </p>
+          <a href="tel:tel:09582222064"> <i class="fa fa-phone"></i>Call Now : &nbsp;09582222064 </a>
+           
+<!--          <a href="https://en.wikipedia.org/wiki/Doge" target="blank">[1]</a></p>-->
+
+          <form>
+          <div class="uk-grid">
+           <div class="uk-width-1-2"><input type="text" placeholder="Your e-Mail ID"></div>
+           
+            <div class="uk-width-1-2"> <input type="text" placeholder="Phone number"></div>
+            
+           </div>
+           <br>
+           
+            <input type="submit" value="Get a Call Back">
+<!--            <p class="form-notice">*this is a fake form</p>-->
+          </form>
+        </div>
+<br><br>
+        <div class="modal-footer" style="margin-top:20px;">
+          <p>no thanks</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Example page JS        -->
+    <!-- Used to fire the modal -->
+    <script>
+
+      // if you want to use the 'fire' or 'disable' fn,
+      // you need to save OuiBounce to an object
+      var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
+        aggressive: true,
+        timer: 0,
+        callback: function() { console.log('ouibounce fired!'); }
+      });
+
+      $('body').on('click', function() {
+        $('#ouibounce-modal').hide();
+      });
+
+      $('#ouibounce-modal .modal-footer').on('click', function() {
+        $('#ouibounce-modal').hide();
+      });
+
+      $('#ouibounce-modal .modal').on('click', function(e) {
+        e.stopPropagation();
+      });
+    </script>
+
+<!--Oui Boiunce Exit Intent End -->
 
 
 
