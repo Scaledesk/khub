@@ -137,7 +137,7 @@ Commercial &amp; Office Interior Design &amp; Execution at affordable prices.
                     <div class="uk-width-medium-1-2">
                 
                  <form id="form_contact_top" action="PHPMailer/MailFunction.php" 
- method="POST" class="uk-form kc-form-comment uk-align-center" onSubmit="return validateForm()">
+ method="POST" class="uk-form kc-form-comment uk-align-center" >
                            <p class="uk-text-center"> Get your Dream Home NOW ...</p>
                             <div class="uk-grid p-10">
                                 <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
@@ -156,7 +156,7 @@ Commercial &amp; Office Interior Design &amp; Execution at affordable prices.
                                 <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
                                     <div class="uk-form-icon">
                                         <i class=""></i>
-                                        <select required name="option">
+                                        <select name="option">
                                         <option value="" disabled selected>Choose Requirement</option>
                                             <option value="Interiors">Interiors</option>
                                         <option value="Office">Office Inteirors</option>
@@ -1562,7 +1562,7 @@ Be it a salwar suit or a sedan car or just a coffee brewery. We plan to cater th
                 </div>
                 <div class="uk-grid uk-grid-collapse">
                     <div class="uk-width-medium-5-6 uk-width-small-1-1 uk-width-1-1 uk-container-center">
-                        <form id="form_contact" action="PHPMailer/MailFunction.php" onSubmit="return validateForm1()" method="POST" class="uk-form kc-form-comment">
+                        <form id="form_contact" action="PHPMailer/MailFunction.php"  method="POST" class="uk-form kc-form-comment">
                             <div class="uk-grid">
                                 <div class="uk-width-medium-1-2 uk-width-small-1-1 uk-width-1-1">
                                     <div class="uk-form-icon">
@@ -1586,7 +1586,7 @@ Be it a salwar suit or a sedan car or just a coffee brewery. We plan to cater th
                                 <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
                                     <div class="uk-form-icon">
                                         <i class="uk-icon-pencil"></i>
-                                        <textarea class="input-text" name="comment" cols="5" rows="5" placeholder="Comment"></textarea>
+                                        <textarea class="input-text" name="comment" cols="5" rows="5" placeholder="Your Message..."></textarea>
                                     </div>
                                 </div>
                                 <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
@@ -1854,33 +1854,48 @@ $('.menu-media li').click(function(){
       <div class="underlay"></div>
       <div class="modal">
         <div class="modal-title">
-          <h3>Take a look at the Offers before leaving ! </h3>
+          <h3><i class="uk-icon-bullhorn uk-text-warning"></i> &nbsp;Take a look at the Offers before leaving ! </h3>
         </div>
 
         <div class="modal-body">
-          <p>&raquo;&nbsp;Get FREE Vastu Consultation </p>
-          <p>&raquo;&nbsp;Get Free Estimate for your Project</p>
-          <p>&raquo;&nbsp;Best Designers </p>
-          <a href="tel:tel:09582222064"> <i class="fa fa-phone"></i>Call Now : &nbsp;09582222064 </a>
+           <p class="f-16">Hi, <br> As you have visited Interio Pro Website for the first time we would like to offer you a <span class="f-color">Introductory Offer </span> ! </p>
+          <p class="f-18 uk-text-center m-b-5">The offer includes : </p>
+          <p class="f-18"><i class="uk-icon-check-circle-o uk-text-primary" aria-hidden="true"></i> <b>Free</b> Consultation</p>
+          <p class="f-18"><i class="uk-icon-check-circle-o uk-text-success" aria-hidden="true"></i> <b>Free</b> Vastu Consultation </p>
+          <p class="f-18"><i class="uk-icon-check-circle-o uk-text-warning" aria-hidden="true"></i> <b>Free</b> Estimate for your Project    </p>
+          
+           
            
 <!--          <a href="https://en.wikipedia.org/wiki/Doge" target="blank">[1]</a></p>-->
 
-          <form action="PHPMailer/MailFunction.php" method="post" onSubmit="return validateForm2()">
-          <div class="uk-grid">
-           <div class="uk-width-1-2"><input type="email" name="email" placeholder="Your e-Mail ID"></div>
-                                      <input type="hidden" name="hidden" value="1">
-            <div class="uk-width-1-2"> <input type="text" name="phone" placeholder="Phone number"> <div id="mobile_error2"></div></div>
+          <form action="PHPMailer/MailFunction.php" method="post" >
+          <div class="uk-grid uk-margin-bottom">
+           <div class="uk-width-1-2">
+                <input type="email" name="email" required placeholder="Your e-Mail ID">
+                          
+            </div>
+                           
+                           
+            <input class="hidden" type="hidden" name="hidden" value="1">
+                            
+            <div class="uk-width-1-2"> 
+            
+            <input type="text" name="phone" required id="mobile2" placeholder="Phone number"> 
+            
+            <span id="mobile_error2"></span>
+            
+            </div>
             
             
            </div>
-           <br>
+           
            
             <input type="submit" value="Get a Call Back">
 <!--            <p class="form-notice">*this is a fake form</p>-->
           </form>
         </div>
 <br><br>
-        <div class="modal-footer" style="margin-top:20px;">
+        <div class="modal-footer">
           <p>no thanks</p>
         </div>
       </div>
@@ -1913,53 +1928,9 @@ $('.menu-media li').click(function(){
 
 
 
-  <script type="text/javascript">
-     function validateForm(){
-                                                 // alert(123);
-          var mobile_ex=/^[0]?[789]\d{9}$/;
-         var mobile=document.getElementById('mobile').value;
-                  // alert(mobile);
-                    if(mobile_ex.test(mobile)){
-                       return true;
-                    }else{
-                               document.getElementById('mobile_error').innerHTML="<span style='color:red'>Enter validate phone no.</span>";
-                           return false;
-                            }
-    }
+  
 
- </script>
-
-  <script type="text/javascript">
-     function validateForm1(){
-                                                 // alert(123);
-          var mobile_ex=/^[0]?[789]\d{9}$/;
-         var mobile=document.getElementById('mobile').value;
-                  // alert(mobile);
-                    if(mobile_ex.test(mobile)){
-                       return true;
-                    }else{
-                               document.getElementById('mobile_error1').innerHTML="<span style='color:red'>Enter validate phone no.</span>";
-                           return false;
-                            }
-    }
-
- </script>
-
-  <script type="text/javascript">
-     function validateForm2(){
-                                                 // alert(123);
-          var mobile_ex=/^[0]?[789]\d{9}$/;
-         var mobile=document.getElementById('mobile').value;
-                  // alert(mobile);
-                    if(mobile_ex.test(mobile)){
-                       return true;
-                    }else{
-                               document.getElementById('mobile_error2').innerHTML="<span style='color:red'>Enter validate phone no.</span>";
-                           return false;
-                            }
-    }
-
- </script>
+  
 <!--Oui Boiunce Exit Intent End -->
 
 
