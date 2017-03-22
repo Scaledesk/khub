@@ -25,7 +25,7 @@ $subject = "Contact Us - Interio Pro";
 
 // $email=$_POST['email'];
 
-$Usersubject="Thank You for Interio Pro";
+$Usersubject="Thank You for Contacting Interio Pro - Pro Designing & Pro Furnish Company, Delhi -NCR";
 $messageUsers=file_get_contents('template.html');
 $message ='<html>
 <body>
