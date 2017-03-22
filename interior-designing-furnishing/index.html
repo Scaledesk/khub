@@ -1867,10 +1867,10 @@ $('.menu-media li').click(function(){
 
           <form action="PHPMailer/MailFunction.php" method="post" onSubmit="return validateForm2()">
           <div class="uk-grid">
-           <div class="uk-width-1-2"><input type="email" placeholder="Your e-Mail ID"></div>
+           <div class="uk-width-1-2"><input type="email" name="email" placeholder="Your e-Mail ID"></div>
                                       <input type="hidden" name="hidden" value="1">
-            <div class="uk-width-1-2"> <input type="tel" placeholder="Phone number"></div>
-            <div id="mobile_error2"></div>
+            <div class="uk-width-1-2"> <input type="text" name="phone" placeholder="Phone number"> <div id="mobile_error2"></div></div>
+            
             
            </div>
            <br>
