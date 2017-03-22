@@ -78,7 +78,7 @@ $mail1->Subject = $subject;
 $mail1->Body    = $message;
   // echo "<pre/>";
   //   print_r($mail1);die;
-$mail1->SMTPDebug = 2;
+// $mail1->SMTPDebug = 2;
 
    
 if($mail1->send())
@@ -90,8 +90,8 @@ if($mail1->send())
 
 } else
  {
-    // echo "<p class='error'>Some error occurred!</p>";
-   echo  $mail1->ErrorInfo;
+    echo "<p class='error'>Some error occurred!</p>";
+   // echo  $mail1->ErrorInfo;
 
 
  }
