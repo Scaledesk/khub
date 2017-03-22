@@ -7,6 +7,9 @@ $email=$_POST['email'];
 $phone=$_POST['phone'];
 $name=$_POST['name'];
 $type=$_POST['option'];
+$comment=$_POST['comment'];
+$hidden=$_POST['hidden'];
+
 
 // echo $email;
 // echo $phone;
@@ -14,9 +17,9 @@ $type=$_POST['option'];
 // echo $type; die;
 // $comment=$_POST['comment'];
 // name phone email option
-$emailadmin="nkscoder@gmail.com";
+//$emailadmin="nkscoder@gmail.com";
 
-  // $emailadmin="hello@interiopro.com";
+  $emailadmin="hello@interiopro.com";
   
 $subject = "Contact Us - Interio Pro";
 
@@ -30,15 +33,22 @@ $message ='<html>
 </body>
 </html>';
 
-// if($email){
-// $message ='<html>
-// <body>
-// <div id="abcd" style="text-align:justify;font-size:18px;"> Name:-'.$name.'<br>Email:-'.$email.'<br>Phone:-'.$phone.'<br>Company :-'.$c_subject.'<br>Address :-'.$comment. '</div>
-// </body>
-// </html>';
+ if($comment){
+ $message ='<html>
+ <body>
+<div id="abcd" style="text-align:justify;font-size:18px;"> Name:-'.$name.'<br>Email:-'.$email.'<br>Phone:-'.$phone.'<br>Message :-'.$comment. '</div>
+</body>
+ </html>';
 
-// }
+ }
+if($hidden){
+ $message ='<html>
+ <body>
+<div id="abcd" style="text-align:justify;font-size:18px;">Email:-'.$email.'<br>Phone:-'.$phone.'</div>
+</body>
+ </html>';
 
+ }
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'sub5.mail.dreamhost.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
@@ -84,13 +94,22 @@ $mail1->Body    = $message;
 if($mail1->send())
  {
       if($mail->send()){
-       echo "<p class='success'>Thanks for contacting us. We will contact you Interio Pro!</p>";
-    }else{ echo "<p class='success'>Thanks for contacting us. We will contact you Interio Pro!</p>";}
+
+      	 header("location: ../thank-you.html");
+ 
+       // echo "<p class='success'>Thanks for contacting us. We will contact you Interio Pro!</p>";
+    }else{
+    	 header("location: ../thank-you.html");
+    	 // header("location: /index.php?msg=Some  error Occurred");
+ 
+     // echo "<p class='success'>Thanks for contacting us. We will contact you Interio Pro!</p>";
+ }
 
 
 } else
  {
-    echo "<p class='error'>Some error occurred!</p>";
+   header("location: ../index.html?msg=Some  error Occurred");
+
    // echo  $mail1->ErrorInfo;
 
 

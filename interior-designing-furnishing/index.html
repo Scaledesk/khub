@@ -137,7 +137,7 @@ Commercial &amp; Office Interior Design &amp; Execution at affordable prices.
                     <div class="uk-width-medium-1-2">
                 
                  <form id="form_contact_top" action="PHPMailer/MailFunction.php" 
- method="POST" class="uk-form kc-form-comment uk-align-center">
+ method="POST" class="uk-form kc-form-comment uk-align-center" onSubmit="return validateForm()">
                            <p class="uk-text-center"> Get your Dream Home NOW ...</p>
                             <div class="uk-grid p-10">
                                 <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
@@ -176,22 +176,7 @@ Commercial &amp; Office Interior Design &amp; Execution at affordable prices.
                                         <div class="uk-align-center">
                                             <button class="kc-button kc-button-default uk-align-center" type="submit"> SUBMIT MESSAGE </button>
                                         </div>
-
-                                        <script type="text/javascript">
-                                            function validateForm(){
-                                                 // alert(123);
-                                                    var mobile_ex=/^[0]?[789]\d{9}$/;
-                                                     var mobile=document.getElementById('mobile').value;
-                                                     // alert(mobile);
-                                                    if(mobile_ex.test(mobile)){
-                                                        return true;
-                                                     }else{
-                                                         document.getElementById('mobile_error').innerHTML="<span style='color:red'>Enter validate phone no.</span>";
-                                                             return false;
-                                                     }
-                                              }
-
-                                        </script>
+                                      
 <!--
                                         <div class="uk-float-center">
                                             <a href="../tel:09582222064"><span class="icon uk-icon-phone kc-color-primary"></span>or  Call Us Now @ 9582222064</a>
@@ -1577,24 +1562,25 @@ Be it a salwar suit or a sedan car or just a coffee brewery. We plan to cater th
                 </div>
                 <div class="uk-grid uk-grid-collapse">
                     <div class="uk-width-medium-5-6 uk-width-small-1-1 uk-width-1-1 uk-container-center">
-                        <form id="form_contact" action="PHPMailer/MailFunction.php" method="POST" class="uk-form kc-form-comment">
+                        <form id="form_contact" action="PHPMailer/MailFunction.php" onSubmit="return validateForm1()" method="POST" class="uk-form kc-form-comment">
                             <div class="uk-grid">
                                 <div class="uk-width-medium-1-2 uk-width-small-1-1 uk-width-1-1">
                                     <div class="uk-form-icon">
                                         <i class="uk-icon-user"></i>
-                                        <input class="input-text" name="name" type="text" placeholder="Your Name">
+                                        <input class="input-text" name="name" required type="text" placeholder="Your Name">
                                     </div>
                                 </div>
                                 <div class="uk-width-medium-1-2 uk-width-small-1-1 uk-width-1-1">
                                     <div class="uk-form-icon">
                                         <i class="uk-icon-phone"></i>
-                                        <input class="input-text" name="phone" type="text" placeholder="Phone Number">
+                                        <input class="input-text" name="phone" required type="text" placeholder="Phone Number">
+                                        <div id="mobile_error1"></div> 
                                     </div>
                                 </div>
                                 <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
                                     <div class="uk-form-icon">
                                         <i class="uk-icon-edit"></i>
-                                        <input class="input-text" name="subject" type="text" placeholder="Subject">
+                                        <input class="input-text" required name="email" type="email" placeholder="Email">
                                     </div>
                                 </div>
                                 <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
@@ -1879,11 +1865,12 @@ $('.menu-media li').click(function(){
            
 <!--          <a href="https://en.wikipedia.org/wiki/Doge" target="blank">[1]</a></p>-->
 
-          <form>
+          <form action="PHPMailer/MailFunction.php" method="post" onSubmit="return validateForm2()">
           <div class="uk-grid">
-           <div class="uk-width-1-2"><input type="text" placeholder="Your e-Mail ID"></div>
-           
-            <div class="uk-width-1-2"> <input type="text" placeholder="Phone number"></div>
+           <div class="uk-width-1-2"><input type="email" placeholder="Your e-Mail ID"></div>
+                                      <input type="hidden" name="hidden" value="1">
+            <div class="uk-width-1-2"> <input type="tel" placeholder="Phone number"></div>
+            <div id="mobile_error2"></div>
             
            </div>
            <br>
@@ -1924,6 +1911,55 @@ $('.menu-media li').click(function(){
       });
     </script>
 
+
+
+  <script type="text/javascript">
+     function validateForm(){
+                                                 // alert(123);
+          var mobile_ex=/^[0]?[789]\d{9}$/;
+         var mobile=document.getElementById('mobile').value;
+                  // alert(mobile);
+                    if(mobile_ex.test(mobile)){
+                       return true;
+                    }else{
+                               document.getElementById('mobile_error').innerHTML="<span style='color:red'>Enter validate phone no.</span>";
+                           return false;
+                            }
+    }
+
+ </script>
+
+  <script type="text/javascript">
+     function validateForm1(){
+                                                 // alert(123);
+          var mobile_ex=/^[0]?[789]\d{9}$/;
+         var mobile=document.getElementById('mobile').value;
+                  // alert(mobile);
+                    if(mobile_ex.test(mobile)){
+                       return true;
+                    }else{
+                               document.getElementById('mobile_error1').innerHTML="<span style='color:red'>Enter validate phone no.</span>";
+                           return false;
+                            }
+    }
+
+ </script>
+
+  <script type="text/javascript">
+     function validateForm2(){
+                                                 // alert(123);
+          var mobile_ex=/^[0]?[789]\d{9}$/;
+         var mobile=document.getElementById('mobile').value;
+                  // alert(mobile);
+                    if(mobile_ex.test(mobile)){
+                       return true;
+                    }else{
+                               document.getElementById('mobile_error2').innerHTML="<span style='color:red'>Enter validate phone no.</span>";
+                           return false;
+                            }
+    }
+
+ </script>
 <!--Oui Boiunce Exit Intent End -->
 
 
