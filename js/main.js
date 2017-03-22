@@ -306,7 +306,7 @@ function commentFormValidation() {
                 $.post($(form).attr('action'), $(form).serialize(), function (response) {
                     $(form).find('.response').append(response).css('display', 'block');
                     $(form).find('input[type="text"]').val('');
-                    $(form).find('textarea').val('');
+//                    $(form).find('textarea').val('');
                 });
                 return false;
             }
