@@ -136,7 +136,8 @@ Commercial &amp; Office Interior Design &amp; Execution at affordable prices.
                     
                     <div class="uk-width-medium-1-2">
                 
-                 <form id="form_contact_top" action="../PHPMailer/MailFunction.php" method="POST" class="uk-form kc-form-comment uk-align-center">
+                 <form id="form_contact_top" action="PHPMailer/MailFunction.php" 
+ method="POST" class="uk-form kc-form-comment uk-align-center" onSubmit=" return validateForm()">
                            <p class="uk-text-center"> Get your Dream Home NOW ...</p>
                             <div class="uk-grid p-10">
                                 <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
@@ -148,13 +149,14 @@ Commercial &amp; Office Interior Design &amp; Execution at affordable prices.
                                 <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
                                     <div class="uk-form-icon">
                                         <i class="uk-icon-phone"></i>
-                                        <input required class="input-text" name="phone" type="text" placeholder="Phone Number">
+                                        <input required class="input-text" id="mobile"  name="phone" type="tel" placeholder="Phone Number">
+                                        <div id="mobile_error"></div> 
                                     </div>
                                 </div>
                                 <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
                                     <div class="uk-form-icon">
                                         <i class=""></i>
-                                        <select required>
+                                        <select required name="option">
                                         <option value="" disabled selected>Choose Requirement</option>
                                             <option>Interiors</option>
                                         <option value="Office">Office Inteirors</option>
@@ -165,15 +167,31 @@ Commercial &amp; Office Interior Design &amp; Execution at affordable prices.
                                 <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
                                     <div class="uk-form-icon">
                                         <i class="uk-icon-envelope"></i>
-                                        <input class="input-text" name="subject" type="email" placeholder="Your e-Mail ID">
+                                        <input class="input-text" name="subject" type="email" required placeholder="Your e-Mail ID">
                                         
                                     </div>
                                 </div>
                                 <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
                                     <div class="uk-clearfix">
                                         <div class="uk-align-center">
-                                            <button class="kc-button kc-button-default uk-align-center" type="submit"> SUBMIT MESSAGE</button>
+                                            <button class="kc-button kc-button-default uk-align-center" type="submit"> SUBMIT MESSAGE </button>
                                         </div>
+
+                                        <script type="text/javascript">
+                                            function validateForm(){
+                                                 // alert(123);
+                                                    var mobile_ex=/^[0]?[789]\d{9}$/;
+                                                     var mobile=document.getElementById('mobile').value;
+                                                     // alert(mobile);
+                                                    if(mobile_ex.test(mobile)){
+                                                        return true;
+                                                     }else{
+                                                         document.getElementById('mobile_error').innerHTML="<span style='color:red'>Enter validate phone no.</span>";
+                                                             return false;
+                                                     }
+                                              }
+
+                                        </script>
 <!--
                                         <div class="uk-float-center">
                                             <a href="../tel:09582222064"><span class="icon uk-icon-phone kc-color-primary"></span>or  Call Us Now @ 9582222064</a>
