@@ -20,6 +20,7 @@ $hidden=$_POST['hidden'];
 //$emailadmin="nkscoder@gmail.com";
 
   $emailadmin="hello@interiopro.com";
+  $emailadmin1="nkhltyagi@yahoo.co.in";
   
 $subject = "Contact Us - Interio Pro";
 
@@ -79,6 +80,7 @@ $mail->addAddress($email, $name);     // Add a recipient
 
 
 $mail1->addAddress($emailadmin);     // Add a recipient
+$mail1->addAddress($emailadmin1);     // Add a recipient
 
 $mail->Subject = $Usersubject;
 $mail->Body    = $messageUsers;
