@@ -102,6 +102,11 @@ div.header li.stick-li {
    
 }
 
+
+div.header li.stick-li > a{
+    padding: 0px 0px !important;
+}
+
 div.header.uk-active li.stick-li {
     background-color: rgb(136,176,75) !important;
     visibility: visible;
