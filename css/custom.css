@@ -103,6 +103,12 @@ div.header li.stick-li {
 }
 
 
+
+.home-one .header .kc-navbar li > a {
+
+    padding: 0 20px!important;}
+
+
 div.header li.stick-li > a{
     padding: 0px 0px !important;
 }
